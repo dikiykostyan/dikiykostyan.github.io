@@ -1,15 +1,125 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
-   <head>
-      <title>   Mikipedia   </title>
-   </head>    
+<head>
+    <meta charset="UTF-8">
+    <title>Mikipedia</title>
+
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            background: #f6f6f6;
+            margin: 0;
+            padding: 0;
+        }
+
+        #header {
+            background: white;
+            border-bottom: 1px solid #a7d7f9;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        #header img {
+            height: 60px;
+            margin-right: 20px;
+        }
+
+        #header h1 {
+            font-size: 32px;
+            margin: 0;
+            font-weight: normal;
+        }
+
+        #content {
+            max-width: 900px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px 30px;
+            border: 1px solid #ccc;
+            position: relative;
+        }
+
+        a {
+            color: #0645ad;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ol {
+            margin-top: 20px;
+        }
+
+        li {
+            margin: 6px 0;
+        }
+
+        .search-box {
+            margin-top: 20px;
+        }
+
+        .search-box input[type="text"] {
+            width: 70%;
+            padding: 8px;
+            font-size: 16px;
+        }
+
+        .search-box button {
+            padding: 8px 12px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #cornerButton {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #0057b7;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        #cornerButton:hover {
+            background: #003f8a;
+        }
+    </style>
+</head>
+
 <body>
 
+<div id="header">
+    <img src="mikipedia.jpg" alt="Mikipedia Logo">
+    <h1>Mikipedia</h1>
+</div>
 
-        <h1 >   Mikipedia  </h1>
-       <a href="about.html">Go to About</a>
-       <a href="Kostiantyn Kasyanenko.html">About Kostiantyn Kasyanenko</a>
+<div id="content">
 
+    <p><a href="about.html">Go to About</a></p>
+
+    <ol>
+        <li><a href="Kostiantyn Kasyanenko.html">About Kostiantyn Kasyanenko</a></li>
+        <li><a href="Aliens.html">Strange Encounter (Aliens)</a></li>
+        <li><a href="streams.html">Nitronix9000 Gaming Streams</a></li>
+    </ol>
+
+    <div class="search-box">
+        <input type="text" placeholder="Search Mikipedia...">
+        <button onclick="alert('This search is completely useless on this site ')">Search</button>
+    </div>
+
+</div>
+
+<a href="memes.html">
+    <button id="cornerButton">Here</button>
+</a>
 
 </body>
 </html>
